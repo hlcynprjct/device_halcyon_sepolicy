@@ -27,12 +27,12 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/halcyon/sepolicy/common/system
 
 ifneq ($(TARGET_HAL_POWER_RW_INPUT_DEVICE), true)
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/halcyon/sepolicy/common/dynamic_extra
 endif
 
 else
-BOARD_VENDOR_SEPOLICY_DIRS += \
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/halcyon/sepolicy/common/dynamic \
     device/halcyon/sepolicy/common/dynamic_extra \
     device/halcyon/sepolicy/common/vendor

@@ -17,7 +17,7 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/halcyon/sepolicy/exynos/dynamic \
     device/halcyon/sepolicy/exynos/system
 else
-BOARD_VENDOR_SEPOLICY_DIRS += \
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
     device/halcyon/sepolicy/exynos/dynamic \
     device/halcyon/sepolicy/exynos/vendor
 endif
