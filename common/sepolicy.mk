@@ -32,9 +32,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
     device/halcyon/sepolicy/common/vendor
 endif
 
-# Selectively include legacy rules defined by the products
--include device/halcyon/sepolicy/legacy-common/sepolicy.mk
-
 # Include atv rules on atv product
 ifeq ($(PRODUCT_IS_ATV), true)
 include device/halcyon/sepolicy/atv/sepolicy.mk
